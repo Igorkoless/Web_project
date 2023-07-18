@@ -17,10 +17,9 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Log in to Docker Hub
-        env:
-          DOCKER_USERNAME: Igorkoless
-          DOCKER_PASSWORD: ${{ secrets.dckr_pat__u4Fk4vk48vlGLsnx2POXplA0kM }}
-        run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+        run: |
+          echo "${{ secrets.dckr_pat__u4Fk4vk48vlGLsnx2POXplA0kM }}" | docker login -u Igorkoless --password-stdin
+
 
 
 
