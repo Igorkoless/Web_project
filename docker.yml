@@ -27,5 +27,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: igorkoless/website:latest
+          tags: igorkoless/web-project-2023:latest
           builder: ${{ secrets.DOCKER_BUILDER }}
