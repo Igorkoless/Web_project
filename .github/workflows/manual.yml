@@ -31,4 +31,4 @@ jobs:
           tags: igorkoless/web-project-2023:latest
           builder: ${{ secrets.DOCKER_BUILDER }}
         env:
-          DOCKER_PASSWORD: ${{ secrets.Asdhjk654'!' | replace('!', '!!') }}
+          DOCKER_PASSWORD: ${{ secrets.Asdhjk654 }}!
