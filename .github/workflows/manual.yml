@@ -26,6 +26,6 @@ jobs:
          context: .
          file: ./Dockerfile
          push: true
-         tags: ghcr.io/Igorkoless/web-project-2023:latest
+         tags: ghcr.io/igorkoless/web-project-2023:latest
 
 
