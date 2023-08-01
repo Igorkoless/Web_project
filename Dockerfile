@@ -2,8 +2,8 @@
 FROM nginx:latest
 
 # Копіюємо файли конфігурації Nginx у контейнер
-COPY nginx.conf /etc/nginx/conf.d/nginx.conf  # Змінено назву файла та його розташування
-COPY default.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/
+COPY default.conf /etc/nginx/conf.d/
 
 # Викладаємо порти, на яких буде прослуховуватись Nginx
 EXPOSE 80
